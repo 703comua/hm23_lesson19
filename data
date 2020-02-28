@@ -1,0 +1,12 @@
+Открыть проект в PhpStorm
+Запустить сборку контейнеров (docker-compose up)
+Зайти в контейнер php-fpm через bash:
+Установить все зависимости через composer (composer install)
+Скопировать файл конфигурации (cp .env.example .env) и внести изменения в настройки подключения к БД
+Выполнить команду генерации крипто ключей (php artisan key:generate)
+
+php artisan key:generate
+php artisan migrate
+php artisan db:seed
+
+php artisan make:migration update_statistics_table --table="statistics"
